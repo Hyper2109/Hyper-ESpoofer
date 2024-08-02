@@ -1,0 +1,13 @@
+{
+    "email": {
+        "from": {
+            "name": "name",
+            "email": "name@mail.com"
+        },
+        "to": "name@mail.com",
+        "body": {
+            "subject": "subject",
+            "message": "message"
+        }
+    }
+}

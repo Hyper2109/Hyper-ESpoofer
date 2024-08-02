@@ -1,0 +1,10 @@
+{
+  "SMTP": {
+    "host": "smtp.host.com",
+    "port": "123",
+    "credentials": {
+      "user": "user",
+      "password": "password"
+    }
+  }
+}
