@@ -17,7 +17,7 @@ Hyper-ESpoofer is a straightforward email spoofing tool built using [Typescript]
 3. **Set Up Email Fields**
     - In the same `/config` folder, configure the email fields in the email.json file.
 
-## Custom bodies
+#### Custom bodies
 
 1. **Add files**
     - Add your custom subject and message txt files to the `/custom-bodies` folder
