@@ -1,8 +1,8 @@
 import { SMTPClient } from "emailjs";
 import { IEmailFields } from "./email.js";
-import SMTPServerOptions from "../../config/SMTP.json" assert { type: "json" };
+import SMTPServerOptions from "../../config/SMTP.json" with { type: "json" };
 
-export class SMTP {
+export abstract class SMTP {
 
     private static _client = new SMTPClient({
         user: SMTPServerOptions.SMTP.credentials.user,
@@ -12,7 +12,7 @@ export class SMTP {
         tls: {
             ciphers: 'SSLv3',
         }
-    })
+    });
 
     static sendEmail(emailFields: IEmailFields) {
         SMTP._client.send(
