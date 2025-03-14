@@ -11,8 +11,8 @@
         },
         "useCustomBody": false,
         "customBody": {
-            "subjectFileName": "trenord.subject.txt",
-            "messageFileName": "trenord.message.txt",
+            "subjectFileName": "custom.subject.txt",
+            "messageFileName": "custom.message.txt",
             "subjectReplacements": [
                 {
                     "from": "change-this",
