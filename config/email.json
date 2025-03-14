@@ -8,6 +8,23 @@
         "body": {
             "subject": "subject",
             "message": "message"
+        },
+        "useCustomBody": false,
+        "customBody": {
+            "subjectFileName": "trenord.subject.txt",
+            "messageFileName": "trenord.message.txt",
+            "subjectReplacements": [
+                {
+                    "from": "change-this",
+                    "to": "to-this"
+                }
+            ],
+            "messageReplacements": [
+                {
+                    "from": "change-this",
+                    "to": "to-this"
+                }
+            ]
         }
     }
 }
