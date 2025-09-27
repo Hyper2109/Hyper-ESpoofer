@@ -1,4 +1,10 @@
-import emailConfig from "../../config/email.json" assert { type: "json" };
+import emailConfig from "../../config/email.json" with { type: "json" };
+import { CustomEmailBuilder } from "./custom-email-builder.js";
+
+const email = emailConfig.email;
+const emailBody = email.useCustomBody
+    ? CustomEmailBuilder.build()
+    : email.body;
 
 export interface IEmailFields {
     fromName: string,
@@ -9,9 +15,9 @@ export interface IEmailFields {
 }
 
 export const emailFields: IEmailFields = {
-    fromName: emailConfig.email.from.name,
-    fromEmail: emailConfig.email.from.email,
-    to: emailConfig.email.to,
-    subject: emailConfig.email.body.subject,
-    message: emailConfig.email.body.message
+    fromName: email.from.name,
+    fromEmail: email.from.email,
+    to: email.to,
+    subject: emailBody.subject,
+    message: emailBody.message
 }
